@@ -40,8 +40,7 @@ function Hero() {
       <h2 className="text-3xl font-bold sm:text-4xl">How it Works</h2>
 
       <p className="mt-4 text-gray-300">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquam doloribus
-        nesciunt eos fugiat. Vitae aperiam fugit consequuntur saepe laborum.
+      Our platform leverages advanced AI technology to help you create forms effortlessly. Simply provide a prompt, and our AI will generate a form tailored to your needs. Customize the form to your liking and start collecting responses in no time.
       </p>
     </div>
 
@@ -55,8 +54,7 @@ function Hero() {
         <h2 className="mt-4 text-xl font-bold text-black">Write promot for your form</h2>
 
         <p className="mt-1 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Start by writing a simple prompt describing the form you need. Our AI will take care of the rest, generating a comprehensive form based on your input.
         </p>
       </a>
 
@@ -69,8 +67,7 @@ function Hero() {
         <h2 className="mt-4 text-xl font-bold text-black">Edit Your form </h2>
 
         <p className="mt-1 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Customize the generated form to suit your specific requirements. Add, remove, or modify fields with ease to ensure the form meets your needs.
         </p>
       </a>
 
@@ -83,8 +80,7 @@ function Hero() {
         <h2 className="mt-4 text-xl font-bold text-black">Share & Start Accepting Responses</h2>
 
         <p className="mt-1 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-          distinctio alias voluptatum blanditiis laudantium.
+        Create AI-Generated Forms hasslefree. Our platform allows you to quickly generate forms using AI, making the process seamless and efficient. Share your forms with ease and start collecting responses instantly.
         </p>
       </a>
 

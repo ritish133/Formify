@@ -16,10 +16,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/edit-form/[formId]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/edit-form/[formId]/page.js"
     ],
     "/dashboard/responses/page": [
       "static/chunks/webpack.js",
@@ -31,20 +31,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/dashboard/upgrade/page.js"
     ],
-    "/(auth)/sign-in/[[...sign-in]]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(auth)/sign-in/[[...sign-in]]/page.js"
-    ],
-    "/edit-form/[formId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/edit-form/[formId]/page.js"
-    ],
     "/aiform/[formid]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/aiform/[formid]/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

@@ -1,8 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/aiform/[formid]/page": "app/aiform/[formid]/page.js",
-  "/edit-form/[formId]/page": "app/edit-form/[formId]/page.js",
-  "/dashboard/responses/page": "app/dashboard/responses/page.js",
-  "/dashboard/upgrade/page": "app/dashboard/upgrade/page.js",
-  "/dashboard/page": "app/dashboard/page.js"
+  "/page": "app/page.js"
 }

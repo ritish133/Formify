@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useEffect } from 'react'
-import logo from '@/public/logo.svg';
 
 function Header() {
   const {user,isSignedIn}=useUser();
@@ -16,7 +15,7 @@ function Header() {
   return !path.includes('aiform')&&(
     <div className='p-3 px-5 border-b shadow-sm'>
         <div className='flex items-center justify-between'>
-            <Image src={logo} 
+            <Image src={'/logo.svg'} 
             width={180} height={50} alt='logo'/>
             {isSignedIn?
             <div className='flex items-center gap-5'>

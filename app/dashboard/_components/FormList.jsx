@@ -23,7 +23,7 @@ function FormList() {
     }
 
   return (
-    <div className='mt-5 grid grid-cols-2 md:grid-cols-3 gap-5'>
+    <div className="mt-5 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5">
         {formList.map((form,index)=>(
             <div>
                 <FormListItem 

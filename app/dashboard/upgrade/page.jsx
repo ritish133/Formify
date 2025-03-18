@@ -106,7 +106,7 @@ function Upgrade() {
                             </ul>
                             <button
                                 onClick={() => handlePayment(item)}
-                                className="mt-8 block rounded-full border border-yellow-500 bg-white px-12 py-3 text-center text-sm font-medium text-yellow-600 hover:ring-1 hover:ring-yellow-600 focus:outline-none focus:ring active:text-yellow-500"
+                                className="mt-8 block rounded-full border border-yellow-500 bg-white px-12 py-3 text-center text-sm font-medium text-yellow-600 hover:ring-1 hover:ring-yellow-600 focus:outline-none focus:ring active:text-yellow-500 ml-9"
                                 disabled={!razorpayLoaded}
                             >
                                 {razorpayLoaded ? "Get Started" : "Loading..."}

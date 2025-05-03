@@ -13,7 +13,7 @@ function SideNav() {
     const menuList = [
         { id: 1, name: 'My Forms', icon: LibraryBig, path: '/dashboard' },
         { id: 2, name: 'Responses', icon: MessageSquare, path: '/dashboard/responses' },
-        { id: 3, name: 'Upgrade', icon: Shield, path: '/dashboard/upgrade' }
+        { id: 3, name: 'Support Us', icon: Shield, path: '/dashboard/supportus' }
     ];
 
     const { user } = useUser();
@@ -21,9 +21,13 @@ function SideNav() {
     const [formList, setFormList] = useState([]);
     const [PercFileCreated, setPercFileCreated] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isSubscribed, setIsSubscribed] = useState(false);
 
     useEffect(() => {
-        if (user) GetFormList();
+        if (user) {
+            GetFormList();
+            setIsSubscribed(user.isSubscribed); 
+        }
     }, [user]);
 
     const GetFormList = async () => {
@@ -32,7 +36,7 @@ function SideNav() {
             .orderBy(desc(JsonForms.id));
 
         setFormList(result);
-        setPercFileCreated((result.length / 3) * 100);
+        setPercFileCreated((result.length / 10) * 100);
     };
 
     return (
@@ -78,13 +82,16 @@ function SideNav() {
                 </div>
 
                 {/* Progress Bar & Upgrade Message */}
-                <div className="absolute bottom-7 p-6 w-full md:w-64">
-                    <div className="my-20">
-                        <Progress value={PercFileCreated} />
-                        <h2 className="text-sm mt-2"><strong>{formList?.length} </strong>Out of <strong>3</strong> Files Created</h2>
-                        <h2 className="text-sm mt-3">Upgrade your plan for unlimited AI form builds</h2>
+                {!isSubscribed && (
+                    <div className="absolute bottom-7 p-6 w-full md:w-64">
+                        <div className="my-20">
+                            <Progress value={PercFileCreated} />
+                            {/* <h2 className="text-sm mt-2"><strong>{formList?.length} </strong>Out of <strong>5</strong> Files Created</h2> */}
+                            <h2 className="text-sm mt-2 text-center">Formify - AI Form Builder</h2>
+                            <h2 className="text-sm mt-3 text-center">AI Studio</h2>
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
         </>
     );

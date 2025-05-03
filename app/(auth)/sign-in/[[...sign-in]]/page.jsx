@@ -61,13 +61,12 @@ export default function Page() {
           </a>
 
           <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-            Welcome to Squid 🦑
+          Welcome to Formify 🦑
           </h1>
 
-          <p className="mt-4 leading-relaxed text-gray-500">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam dolorum aliquam,
-            quibusdam aperiam voluptatum.
-          </p>
+          <p className="mt-4 leading-relaxed text-white/90">
+        Seamless AI-Powered Form Builder – Create, Customize & Share in Seconds!
+        </p>
         </div>
 
         <SignIn path="/sign-in" />
